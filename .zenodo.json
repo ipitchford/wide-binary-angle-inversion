@@ -1,0 +1,61 @@
+{
+  "title": "An exact projected-angle likelihood and population inversion for wide-binary eccentricities",
+  "upload_type": "publication",
+  "publication_type": "preprint",
+  "description": "<p><strong>Unrefereed research candidate.</strong> A wide binary star takes thousands of years to complete one orbit, so its eccentricity usually cannot be found by following the orbit. Astronomers instead use the angle &Gamma; between the pair's projected separation and projected relative velocity, whose distribution over many binaries depends on the population's eccentricity law. Hwang, Ting and Zakamska (MNRAS 2022, Appendix B) asked whether this angle distribution determines the eccentricity distribution uniquely.</p><p>In the ideal model (random orbital phase, uniformly random 3D orientation, error-free projections) this package derives the likelihood of one angle in closed form, p(&gamma;|e) = [acosh(1/e) &minus; 1{|cos &gamma;| &gt; e} acosh(|cos &gamma;|/e)] / (&pi; sin&sup2;&gamma;), and shows that its mixtures are classical Abel transforms. This gives an explicit inverse for every eccentricity law, including atoms: different eccentricity laws never give the same angle law. The inverse is continuous in the weak topology but discontinuous in total variation, so fine structure can be nearly invisible. Moments need no inversion: E&radic;(1&minus;e&sup2;) = (&pi;/2) E sin&sup3;&Gamma; and E e&sup2; = 1/2 + E cos 2&Gamma; &minus; (1/2) E cos 4&Gamma;; these are the only symmetric unbiased single-angle observables for their targets and give near-efficient power-law index estimators. Two exact selection results bear on Gaia samples: thermal populations keep a uniform angle law under selections that ignore sky position angles, and binning by projected separation preserves the model under a log-uniform semimajor-axis law.</p><p>The archive contains the 21-page manuscript (PDF and LaTeX source) with complete proofs, a Python library (likelihoods, observables, estimators, Kepler simulators), the full validation script with recorded results and figures, semantic negative controls, fast CI checks, the bounded novelty report and SHA-256 sums. All data are synthetic; no observational catalogue is analysed. Assurance boundary: written proofs; floating-point numerical checks and Kepler simulations; producer-side replay in normal and optimised modes; internal AI-assisted review (five roles, adversarial correctness review, proof audit and re-review). This is not peer review, independent reproduction or formal verification. Creator: Anonymous. Prose, manuscript and data CC0-1.0; code MIT.</p>",
+  "creators": [
+    {
+      "name": "Anonymous"
+    }
+  ],
+  "version": "1.0.0-candidate",
+  "doi": "10.5281/zenodo.23838665",
+  "publication_date": "2026-10-31",
+  "access_right": "open",
+  "license": "cc-zero",
+  "keywords": [
+    "wide binaries",
+    "orbital eccentricity",
+    "Gaia",
+    "projected angle",
+    "Abel transform",
+    "identifiability",
+    "inverse problems",
+    "Kepler orbits",
+    "eccentricity distribution",
+    "selection effects"
+  ],
+  "related_identifiers": [
+    {
+      "identifier": "https://github.com/ipitchford/wide-binary-angle-inversion/tree/v1.0.0-candidate",
+      "relation": "isSupplementTo",
+      "scheme": "url"
+    },
+    {
+      "identifier": "https://evidencepress.org/releases/wide-binary-angle-inversion/",
+      "relation": "isDocumentedBy",
+      "scheme": "url"
+    },
+    {
+      "identifier": "10.1093/mnras/stac675",
+      "relation": "references",
+      "scheme": "doi"
+    },
+    {
+      "identifier": "10.1093/mnrasl/slac134",
+      "relation": "references",
+      "scheme": "doi"
+    },
+    {
+      "identifier": "10.3847/1538-3881/ada5fa",
+      "relation": "references",
+      "scheme": "doi"
+    },
+    {
+      "identifier": "10.1093/mnras/stv2825",
+      "relation": "references",
+      "scheme": "doi"
+    }
+  ],
+  "notes": "Original code (*.py, CI workflows) is released under the MIT licence; see LICENSES.md in the archive. Short quotations from Hwang, Ting and Zakamska (2022) remain the source authors' text."
+}

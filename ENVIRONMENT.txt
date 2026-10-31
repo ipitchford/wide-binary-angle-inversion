@@ -1,0 +1,15 @@
+Producer environment for release 1.0.0-candidate (31 October 2026)
+OS: macOS (Darwin 27.0.0), Apple silicon
+Python: 3.11.14 (via uv)
+Pinned packages (requirements.txt): numpy==2.3.5, scipy==1.17.0, matplotlib==3.10.8
+Recorded replay command (from a fresh copy, with the package directory on sys.path):
+  uv run --no-project --with numpy==2.3.5 --with scipy==1.17.0 --with matplotlib==3.10.8 \
+    python3 -I -B [-O] validate_and_plot.py --n-per-e 400000 --out OUT
+  ... python3 -I -B -O negative_controls.py --out OUT-NC
+Fast blocking checks (CI): python quick_checks.py --out DIR; python negative_controls.py --out DIR
+PDF: latexmk -pdf manuscript.tex (pdfTeX, TeX Live 2026)
+CI: GitHub Actions ubuntu-latest, Python 3.11 (.github/workflows/replay.yml)
+Every check is an explicit test raising RuntimeError; python -O is supported.
+Seed 20261028. Timing fields (elapsed_seconds) differ between runs; all other fields of
+results/summary.json were identical between the normal and -O replays on this platform.
+Floating-point results on other platforms may differ in the last digits; checks use tolerances.

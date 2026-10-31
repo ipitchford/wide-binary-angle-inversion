@@ -1,0 +1,35 @@
+{
+ "schemaVersion": "1.0",
+ "release": "wide-binary-angle-inversion",
+ "version": "1.0.0-candidate",
+ "doi": "10.5281/zenodo.23838665",
+ "conceptDoi": "10.5281/zenodo.23838664",
+ "status": "unrefereed research candidate; internal AI-assisted review only",
+ "target": {
+  "citation": "Hwang, Ting & Zakamska (2022), MNRAS 512, 3383-3399, Appendix B (uniqueness of the eccentricity-to-angle mapping)",
+  "doi": "10.1093/mnras/stac675",
+  "sourceVersionRead": "arXiv:2111.01789v2"
+ },
+ "model": "Conditional on eccentricity e in [0,1): mean anomaly uniform on [0,2pi); orbital frame Haar-distributed on SO(3), independent of phase; Gamma in [0,pi] is the angle between the error-free sky projections of relative position and relative velocity. Observations i.i.d. from one population.",
+ "claims": [
+  {"id": "exact-likelihood", "statement": "For 0<e<1 and 0<gamma<pi, p(gamma|e) = [acosh(1/e) - 1{|cos gamma|>e} acosh(|cos gamma|/e)] / (pi sin^2 gamma); the circular case is -log|cos gamma| / (pi sin^2 gamma).", "status": "proved", "location": "Theorem 3.1, Section 3", "evidence": ["manuscript.pdf", "proof_core.md", "results/validation.json"]},
+  {"id": "measure-level-inverse", "statement": "Mixtures of the likelihood over any Borel probability law F on [0,1) are classical Abel transforms; the angle law determines F, including atoms, by an explicit inverse.", "status": "proved", "location": "Theorem 4.1, Section 4", "evidence": ["manuscript.pdf", "proof_core.md"]},
+  {"id": "power-law-laws", "statement": "Closed angle laws for power-law eccentricity populations f(e) = (alpha+1) e^alpha; the thermal law alpha = 1 is the unique law giving uniform angles.", "status": "proved", "location": "Section 5", "evidence": ["manuscript.pdf"]},
+  {"id": "real-order-moments", "statement": "Every circularity moment E (1-e^2)^(s/2) is the mean of an explicit angle observable; e.g. E sqrt(1-e^2) = (pi/2) E sin^3 Gamma. Estimator claims hold for s >= 0 or when the moment is finite.", "status": "proved", "location": "Theorem 6.1", "evidence": ["manuscript.pdf", "results/validation.json"]},
+  {"id": "dual-observable-uniqueness", "statement": "An eccentricity functional has at most one symmetric integrable unbiased single-angle observable (almost everywhere).", "status": "proved", "location": "Theorem 6.2", "evidence": ["manuscript.pdf"]},
+  {"id": "even-eccentricity-moments", "statement": "E e^2 = 1/2 + E cos 2Gamma - (1/2) E cos 4Gamma, and E e^4 is likewise a finite Fourier sum.", "status": "proved", "location": "Corollary 7.1", "evidence": ["manuscript.pdf", "results/validation.json"]},
+  {"id": "power-law-index-estimators", "statement": "One-line estimators of power-law indices with Fisher information and efficiencies (min sin^3 efficiency 0.9595 at alpha = 0.5 on a 501-point grid).", "status": "formulas-proved-numbers-by-quadrature", "location": "Section 7.2, Table 1, Figure 4", "evidence": ["results/summary.json"]},
+  {"id": "thermal-selection-invariance", "statement": "Populations thermal at each semimajor axis and total mass keep a uniform angle law under selection on true lengths, line-of-sight angles, semimajor axis and total mass that ignores sky position angles.", "status": "proved", "location": "Proposition 8.1", "evidence": ["manuscript.pdf", "results/validation.json"]},
+  {"id": "separation-binning", "statement": "Binning by projected separation preserves the model when semimajor axes follow a log-uniform (Opik) law independent of shape, phase and orientation, and otherwise reweights by an explicit factor.", "status": "proved", "location": "Proposition 8.2, Table 2", "evidence": ["manuscript.pdf", "results/validation.json"]},
+  {"id": "tv-discontinuity", "statement": "The inverse is discontinuous in total variation: eccentricity laws far apart in total variation can give angle laws arbitrarily close.", "status": "proved", "location": "Proposition 9.1", "evidence": ["manuscript.pdf", "figures/inverse_instability.png"]},
+  {"id": "weak-continuity", "statement": "The inverse is continuous in the weak topology.", "status": "proved", "location": "Proposition 9.2", "evidence": ["manuscript.pdf"]},
+  {"id": "grid-mle-demo", "statement": "A grid maximum-likelihood fit recovers a step CDF with errors 0.103, 0.061, 0.036 at N = 2,000, 20,000, 100,000.", "status": "numerical-demonstration", "location": "Section 10.3", "evidence": ["results/summary.json"]}
+ ],
+ "notClaimed": [
+  "Any result about a real catalogue; all data are synthetic",
+  "Point identification of an individual binary's eccentricity",
+  "Novelty of angle-based eccentricity inference (Tokovinin 1998 onward)",
+  "Consistency or a rate for the grid fit; a proof of the observed 1/n decay; minimax rates; semiparametric efficiency",
+  "Historical priority beyond a bounded search"
+ ]
+}

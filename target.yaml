@@ -1,0 +1,111 @@
+target_id: wide-binary-angle-identifiability
+search_date: 2026-10-28
+intended_contribution_unit: exact-projected-likelihood-and-constructive-injectivity-theorem
+claim:
+  exact_statement: |
+    Let F and G be Borel probability laws of eccentricity e on [0,1).
+    Independently conditionally on e, sample mean anomaly uniformly on [0,2*pi)
+    and orient the Kepler orbit by Haar measure on SO(3). Let gamma in [0,pi]
+    be the angle between the sky-plane projections of relative position and
+    relative velocity at that epoch. The proposed target is to prove that
+    equality of the probability laws of gamma implies F=G, via an exact
+    elementary projected likelihood and its reduction to a classical Abel
+    transform. Atoms are included. Selection, unknown anisotropic orientations,
+    orbital-phase selection and measurement error are excluded initially.
+  exclusions:
+    - Distinguishing only a one-parameter power-law family does not suffice.
+    - Numerical full rank of discretised kernels does not prove injectivity.
+    - A formula for the forward kernel alone does not resolve the question.
+    - No claim that all ingredients of an eventual proof are historically new.
+    - No point identification of an individual binary's eccentricity from one angle, and no claim of real-catalogue precision or empirical performance.
+source:
+  originating_reference: Hwang, Ting and Zakamska (2022), The eccentricity distribution of wide binaries and their individual measurements, MNRAS 512, 3383-3399, Appendix B.
+  url: https://doi.org/10.1093/mnras/stac675
+  arxiv: https://arxiv.org/abs/2111.01789
+normalisation:
+  indices: Continuous eccentricity law; no finite matrix is the primary object.
+  scaling: Dimensionless angle only; mass and semi-major axis cancel.
+  basis_order: Primary bridge uses c=abs(cos(gamma)) and eccentricity e; older spectral fingerprints retained below as audit history.
+  symmetries:
+    - gamma -> pi-gamma under time reversal
+    - arbitrary common SO(3) rotation of position and velocity
+sequences:
+  - name: pi_times_s_n
+    exact_values: ['20/9', '16/25', '3328/11025', '17408/99225', '65536/571725', '6553600/81162081']
+    expression: 'pi*(4*n+1)*Gamma(n)^2/(4*Gamma(n+3/2)^2), n>=1'
+    natural_scalings: ['4*(2*l+1)/(l^2*(l+1)^2*P_l(0)^2), l=2*n']
+  - name: coefficient_of_a_2n_in_b_2
+    exact_values: ['5/6', '1/10', '13/420', '17/1260', '7/990', '25/6006']
+    expression: '4*(4*n+1)/((2*n-1)*(2*n)*(2*n+1)*(2*n+2))'
+generating_functions:
+  - name: Legendre_generating_function_used_as_classical_identity
+    expression: '(1-2*x*t+t^2)^(-1/2)'
+    variables: [x,t]
+matrices:
+  - name: first_two_even_intrinsic_moments_to_even_projected_Fourier_coefficients
+    entries:
+      - ['5/6','1/10']
+      - ['0','7/10']
+  - name: first_three_even_intrinsic_moments_to_even_projected_Fourier_coefficients
+    entries:
+      - ['5/6','1/10','13/420']
+      - ['0','7/10','26/175']
+      - ['0','0','429/700']
+  - name: first_four_even_intrinsic_moments_to_even_projected_Fourier_coefficients
+    entries:
+      - ['5/6','1/10','13/420','17/1260']
+      - ['0','7/10','26/175','187/3150']
+      - ['0','0','429/700','2431/14700']
+      - ['0','0','0','2431/4410']
+aliases:
+  analysis:
+    - Abel integral inversion
+    - spherical integral transform
+    - random-plane projected angle distribution
+    - dihedral angle stereology
+  probability:
+    - identifiability of a continuous mixture
+    - marginal azimuth difference of isotropic vector pairs
+    - Haar rotation of a vector pair
+  combinatorics:
+    - Legendre-to-Fourier coefficient connection, if applicable
+  mathematical_physics:
+    - Kepler orbital phase mixing
+    - flight-path angle
+    - thermal eccentricity distribution
+  statistics_optimisation_ml:
+    - nonparametric mixing distribution identifiability
+    - inverse stereology
+    - spherical random projection
+known_invariants:
+  e_zero: 'Intrinsic position-velocity angle equals pi/2; projected angle density is -log(abs(cos(gamma)))/(pi*sin(gamma)^2).'
+  thermal: f(e)=2e gives a uniform projected angle density 1/pi (known, not claimed new).
+  e_one_limit: In the radial limit, projected angles concentrate at 0 and pi.
+  finite_fingerprint_requirement: Intrinsically continuous target. Exact primary kernel, limiting cases, power-law family, and prior spectral fingerprints are recorded.
+  projected_kernel_integral: 'p(gamma|e)=1/(pi*sin(gamma)^2)*integral_{max(e,abs(cos(gamma)))}^1 dt/sqrt(t^2-e^2), 0<e<1.'
+  projected_kernel_acosh: 'p(gamma|e)=(acosh(1/e)-1_{abs(cos(gamma))>e}*acosh(abs(cos(gamma))/e))/(pi*sin(gamma)^2).'
+  projected_kernel_atanh: 'Set j=sqrt(1-e^2), s=sin(gamma): p=(atanh(j)-1_{s<j}*atanh(sqrt((j^2-s^2)/(1-s^2))))/(pi*s^2).'
+  cot_uniform_mixture: 'Given beta uniform[0,2*pi), cot(gamma) is uniform[-A_beta,A_beta], A_beta=sqrt(1/((1-e^2)*sin(beta)^2)-1).'
+  abel_bridge_density: 'If F has density f, -d/dc[pi*(1-c^2)*p(arccos(c))]=integral_0^c f(e)/sqrt(c^2-e^2) de, 0<c<1; arbitrary measures use a.e./distributional interpretation.'
+  powerlaw_angle: 'For f(e)=(alpha+1)*e^alpha, alpha>-1: p(gamma)=B((alpha+1)/2,1/2)/(2*pi)*(1-abs(cos(gamma))^(alpha+1))/sin(gamma)^2.'
+  uniform_eccentricity_angle: 'f(e)=1 yields p(gamma)=1/(2*(1+abs(cos(gamma)))).'
+  odd_sine_moments: 'pi*E[sin(gamma)^(2*k+1)|e]=B(k,1/2)*sum_{r=0}^{k-1} (1-e^2)^(r+1/2)/(2*r+1), k>=1.'
+  bounded_unbiased_observable: 'W_k(gamma)=pi/B(k,1/2)*sin(gamma)^(2*k-1)*(1-(2*k-1)*cos(gamma)^2); E[W_k|e]=(1-e^2)^(k-1/2).'
+  intrinsic_kernel: 'p(mu|e)=sqrt(1-e^2)/(pi*(1-mu^2)*sqrt(e^2-mu^2)), |mu|<e; e=0 gives delta_0. Same kernel as Hwang et al. equations 11-16 after simplification.'
+  dual_moment_one: 'E[P_2(mu)]=1-(3*pi/4)*E[sin(gamma)^3]'
+  dual_moment_two: 'E[P_4(mu)]=1-(75*pi/16)*E[sin(gamma)^3]+(315*pi/64)*E[sin(gamma)^5]'
+  dual_moment_three: 'E[P_6(mu)]=1-(3675*pi/256)*E[sin(gamma)^3]+(19845*pi/512)*E[sin(gamma)^5]-(51975*pi/2048)*E[sin(gamma)^7]'
+  eccentricity_moment_one: 'E[sqrt(1-e^2)]=(pi/2)*E[sin(gamma)^3]'
+  weighted_moments: 'E[(1-mu^2)*mu^(2*n)]=binomial(2*n,n)/4^n*E[sqrt(1-e^2)*e^(2*n)]'
+search_constraints:
+  primary_sources_only_for_technical_claims: true
+  databases_or_corpora:
+    - Web search engine 1 and 2
+    - Oxford Academic full-text search extracts
+    - arXiv
+    - ADS public article archive where accessible
+    - SIAM primary abstracts and references
+    - DML-CZ open full texts
+    - Exa semantic web search and full-page extraction
+  primary_historical_gap_closed: Tokovinin1998 public ADS scan retrieved and both pages178-179 visually inspected by two agents.
+  outcome: Bounded uncertainty; no exact likelihood/Abel bridge/injectivity collision found in inspected corpus; no categorical first or exhaustive novelty claim.

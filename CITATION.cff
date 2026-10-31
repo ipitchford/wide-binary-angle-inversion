@@ -1,0 +1,26 @@
+cff-version: 1.2.0
+message: "If you use this work, please cite it as below."
+type: software
+title: "An exact projected-angle likelihood and population inversion for wide-binary eccentricities"
+version: 1.0.0-candidate
+date-released: 2026-10-31
+doi: 10.5281/zenodo.23838665
+authors:
+  - name: Anonymous
+license: CC0-1.0
+repository-code: "https://github.com/ipitchford/wide-binary-angle-inversion"
+url: "https://evidencepress.org/releases/wide-binary-angle-inversion/"
+abstract: "Unrefereed research candidate. For wide binary stars observed at a random orbital phase and random 3D orientation, the likelihood of the angle between projected separation and projected relative velocity is derived in closed form; its mixtures are Abel transforms, so the angle distribution determines the eccentricity distribution (including atoms), answering the uniqueness question in Appendix B of Hwang, Ting and Zakamska (2022). The inverse is weakly continuous but discontinuous in total variation. Moments such as E sqrt(1-e^2) = (pi/2) E sin^3 Gamma and E e^2 = 1/2 + E cos 2Gamma - (1/2) E cos 4Gamma need no inversion. Two exact selection results bear on Gaia samples. Synthetic checks only; no observational catalogue is analysed."
+keywords:
+  - wide binaries
+  - orbital eccentricity
+  - Gaia
+  - projected angle
+  - Abel transform
+  - identifiability
+  - inverse problems
+  - Kepler orbits
+identifiers:
+  - type: doi
+    value: 10.5281/zenodo.23838664
+    description: Concept DOI (all versions)

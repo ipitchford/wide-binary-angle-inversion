@@ -1,0 +1,38 @@
+[
+  {
+    "control": "kernel off by 1% in eccentricity",
+    "patched": "angle_pdf",
+    "caught": true,
+    "message": "validation check failed: (6.274469832590057e-11, 0.12692557773065388)"
+  },
+  {
+    "control": "fractional observable scaled by 1.002",
+    "patched": "fractional_moment_observable",
+    "caught": true,
+    "message": "validation check failed: fractional and Fourier moment identities"
+  },
+  {
+    "control": "e^2 observable coefficient perturbed",
+    "patched": "eccentricity_square_observable",
+    "caught": true,
+    "message": "validation check failed: fractional and Fourier moment identities"
+  },
+  {
+    "control": "inclination uniform in angle",
+    "patched": "sample_kepler",
+    "caught": true,
+    "message": "validation check failed: Monte Carlo moments"
+  },
+  {
+    "control": "uniform true anomaly",
+    "patched": "sample_kepler",
+    "caught": true,
+    "message": "validation check failed: Monte Carlo moments"
+  },
+  {
+    "control": "Abel inverse constant off by 5%",
+    "patched": "abel_inverse_left_cdf",
+    "caught": true,
+    "message": "validation check failed: end-to-end Abel inversion"
+  }
+]

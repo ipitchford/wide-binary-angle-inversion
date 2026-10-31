@@ -1,0 +1,220 @@
+{
+ "schemaVersion": "1.0",
+ "contributionMap": [
+  {
+   "claim": "Closed-form likelihood of the projected separation-velocity angle for one eccentricity (Theorem 3.1)",
+   "unit": "statement",
+   "paperLocation": "abstract; Theorem 3.1",
+   "searches": [
+    {
+     "date": "2026-10-28",
+     "query": "wide binary eccentricity projected angle inverse kernel identifiability analytic; 'eccentricity distribution' 'unique mapping'/'injective'; 'eccentricity' 'arccosh' 'likelihood'; 'projected angle' 'atanh'; Abel-transform and stereology aliases; exact-fraction and gamma-ratio fingerprints; Exa semantic search (full log: novelty_report.md Section 6)",
+     "corpus": "two web search engines, Exa semantic search, arXiv, Oxford Academic, ADS scan, publisher abstracts, GitHub"
+    }
+   ],
+   "closestPriorWork": "Hwang, Ting & Zakamska (2022) Appendix A evaluate the same likelihood numerically; their equations 11-16 give the intrinsic 3D angle density (credited)",
+   "verdict": "new-in-bounded-search"
+  },
+  {
+   "claim": "Mixtures are Abel transforms; the angle law determines every eccentricity law, including atoms (Theorem 4.1), answering Hwang et al. (2022) Appendix B",
+   "unit": "statement",
+   "paperLocation": "Theorem 4.1",
+   "searches": [
+    {
+     "date": "2026-10-28",
+     "query": "wide binary eccentricity projected angle inverse kernel identifiability analytic; 'eccentricity distribution' 'unique mapping'/'injective'; 'eccentricity' 'arccosh' 'likelihood'; 'projected angle' 'atanh'; Abel-transform and stereology aliases; exact-fraction and gamma-ratio fingerprints; Exa semantic search (full log: novelty_report.md Section 6)",
+     "corpus": "two web search engines, Exa semantic search, arXiv, Oxford Academic, ADS scan, publisher abstracts, GitHub"
+    }
+   ],
+   "closestPriorWork": "Hwang et al. (2022) Appendix B: numerical distinctness within power laws; Tokovinin (1998) numerical finite mixtures",
+   "verdict": "new-in-bounded-search"
+  },
+  {
+   "claim": "Abel inversion, Hausdorff moment determinacy and weak-continuity arguments",
+   "unit": "method",
+   "paperLocation": "Sections 4, 6, 9",
+   "searches": [
+    {
+     "date": "2026-10-28",
+     "query": "wide binary eccentricity projected angle inverse kernel identifiability analytic; 'eccentricity distribution' 'unique mapping'/'injective'; 'eccentricity' 'arccosh' 'likelihood'; 'projected angle' 'atanh'; Abel-transform and stereology aliases; exact-fraction and gamma-ratio fingerprints; Exa semantic search (full log: novelty_report.md Section 6)",
+     "corpus": "two web search engines, Exa semantic search, arXiv, Oxford Academic, ADS scan, publisher abstracts, GitHub"
+    }
+   ],
+   "closestPriorWork": "Classical Abel inversion (Gorenflo & Vessella 1991), Wicksell (1925), Hausdorff (1923)",
+   "verdict": "known-cited"
+  },
+  {
+   "claim": "Real-order moment observables, dual-observable uniqueness and Fourier formulas for even eccentricity moments (Theorems 6.1-6.2, Corollary 7.1)",
+   "unit": "statement",
+   "paperLocation": "Sections 6-7",
+   "searches": [
+    {
+     "date": "2026-10-28",
+     "query": "wide binary eccentricity projected angle inverse kernel identifiability analytic; 'eccentricity distribution' 'unique mapping'/'injective'; 'eccentricity' 'arccosh' 'likelihood'; 'projected angle' 'atanh'; Abel-transform and stereology aliases; exact-fraction and gamma-ratio fingerprints; Exa semantic search (full log: novelty_report.md Section 6)",
+     "corpus": "two web search engines, Exa semantic search, arXiv, Oxford Academic, ADS scan, publisher abstracts, GitHub"
+    },
+    {
+     "date": "2026-10-31",
+     "query": "Fourier formula for mean square eccentricity from projected angles; dual unbiased angle observables; separation-binning reweighting; thermal invariance under selection; Benisty/Makarov/Hamilton comparisons",
+     "corpus": "web, arXiv, Crossref, Semantic Scholar (five internal reviewers; novelty_report.md addendum)"
+    }
+   ],
+   "closestPriorWork": "none found in bounded search",
+   "verdict": "new-in-bounded-search"
+  },
+  {
+   "claim": "Thermal invariance under azimuth-blind selection (Proposition 8.1)",
+   "unit": "statement",
+   "paperLocation": "Proposition 8.1",
+   "searches": [
+    {
+     "date": "2026-10-31",
+     "query": "Fourier formula for mean square eccentricity from projected angles; dual unbiased angle observables; separation-binning reweighting; thermal invariance under selection; Benisty/Makarov/Hamilton comparisons",
+     "corpus": "web, arXiv, Crossref, Semantic Scholar (five internal reviewers; novelty_report.md addendum)"
+    }
+   ],
+   "closestPriorWork": "Hwang et al. (2022) Section 2.5 phase-space argument and numerical finding under velocity criteria; Jeans (1919) microcanonical characterisation",
+   "verdict": "partially-known-cited"
+  },
+  {
+   "claim": "Separation-binning reweighting, exact under a log-uniform semimajor-axis law (Proposition 8.2)",
+   "unit": "statement",
+   "paperLocation": "Proposition 8.2",
+   "searches": [
+    {
+     "date": "2026-10-31",
+     "query": "Fourier formula for mean square eccentricity from projected angles; dual unbiased angle observables; separation-binning reweighting; thermal invariance under selection; Benisty/Makarov/Hamilton comparisons",
+     "corpus": "web, arXiv, Crossref, Semantic Scholar (five internal reviewers; novelty_report.md addendum)"
+    }
+   ],
+   "closestPriorWork": "none found in bounded search",
+   "verdict": "new-in-bounded-search"
+  },
+  {
+   "claim": "Angle-based eccentricity inference as an observational method",
+   "unit": "method",
+   "paperLocation": "Section 1",
+   "searches": [
+    {
+     "date": "2026-10-28",
+     "query": "wide binary eccentricity projected angle inverse kernel identifiability analytic; 'eccentricity distribution' 'unique mapping'/'injective'; 'eccentricity' 'arccosh' 'likelihood'; 'projected angle' 'atanh'; Abel-transform and stereology aliases; exact-fraction and gamma-ratio fingerprints; Exa semantic search (full log: novelty_report.md Section 6)",
+     "corpus": "two web search engines, Exa semantic search, arXiv, Oxford Academic, ADS scan, publisher abstracts, GitHub"
+    }
+   ],
+   "closestPriorWork": "Tokovinin (1998); Tokovinin & Kiyaeva (2016); Tokovinin (2020); Hwang et al. (2022); Makarov (2025)",
+   "verdict": "known-cited"
+  }
+ ],
+ "sourcesReadInFull": [
+  {
+   "citation": "Hwang, Ting & Zakamska (2022), MNRAS 512, 3383; arXiv:2111.01789v2",
+   "usedFor": "the originating question, numerical likelihood, intrinsic-angle density, thermal argument",
+   "readWhat": "Sections 2.1-2.5, Appendices A and B; quotations checked",
+   "date": "2026-10-28",
+   "evidenceLocator": "https://arxiv.org/pdf/2111.01789, Appendix B (PDF pp. 18-19)"
+  },
+  {
+   "citation": "Tokovinin (1998), Astronomy Letters 24, 178-179",
+   "usedFor": "original angle method",
+   "readWhat": "complete two-page ADS scan",
+   "date": "2026-10-28",
+   "evidenceLocator": "https://articles.adsabs.harvard.edu/pdf/1998AstL...24..178T"
+  },
+  {
+   "citation": "Brandt (2026), arXiv:2601.14688v2",
+   "usedFor": "distinguishing neighbouring closed-form orbital statistics",
+   "readWhat": "full text",
+   "date": "2026-10-28",
+   "evidenceLocator": "https://arxiv.org/abs/2601.14688"
+  },
+  {
+   "citation": "Kloza & Elliott (2023), EPL 143, 22002",
+   "usedFor": "distinguishing a fixed-axis orientation inverse",
+   "readWhat": "full text",
+   "date": "2026-10-28",
+   "evidenceLocator": "https://doi.org/10.1209/0295-5075/ace4ee"
+  }
+ ],
+ "limitationTriage": [
+  {
+   "limitation": "No real catalogue analysed",
+   "closingQuestion": "Can a Gaia catalogue be analysed with the exact likelihood?",
+   "triedOrSearched": "Requires a vector proper-motion error model and a selection model (equation 49)",
+   "estimatedCost": "days to weeks",
+   "cheap": false,
+   "decision": "OPEN",
+   "reasonOpen": "New empirical work and data download",
+   "whyNotClosedNow": "Not cheap; outside the theorem paper"
+  },
+  {
+   "limitation": "Observed 1/n decay in the total-variation example not proved",
+   "closingQuestion": "Known asymptotic or cheap proof?",
+   "triedOrSearched": "Fresnel evaluation n = 1..64; endpoint-dominated decay reported, not claimed",
+   "estimatedCost": "open research problem",
+   "cheap": false,
+   "decision": "OPEN",
+   "reasonOpen": "Needs new analysis",
+   "whyNotClosedNow": "Not cheap"
+  },
+  {
+   "limitation": "Consistency and rate of the grid maximum-likelihood fit; minimax rates",
+   "closingQuestion": "Does a Groeneboom-Jongbloed-type theory transfer?",
+   "triedOrSearched": "Demonstration only; Wicksell-problem literature cited",
+   "estimatedCost": "open research problem",
+   "cheap": false,
+   "decision": "OPEN",
+   "reasonOpen": "Needs new theory",
+   "whyNotClosedNow": "Not cheap"
+  },
+  {
+   "limitation": "Joint angle-speed law; semiparametric efficiency",
+   "closingQuestion": "Closed form available?",
+   "triedOrSearched": "Not attempted",
+   "estimatedCost": "days",
+   "cheap": false,
+   "decision": "OPEN",
+   "reasonOpen": "Open research question",
+   "whyNotClosedNow": "Not cheap"
+  },
+  {
+   "limitation": "Selection and phase assumptions for real samples",
+   "closingQuestion": "Which selections preserve the model exactly?",
+   "triedOrSearched": "Propositions 8.1 and 8.2 added with simulations",
+   "estimatedCost": "about a day",
+   "cheap": true,
+   "decision": "CLOSED",
+   "reasonOpen": "",
+   "whyNotClosedNow": ""
+  },
+  {
+   "limitation": "Rigid-angle projection literatures (jet-disc, pulsar spin-velocity) not searched for a second uniqueness route",
+   "closingQuestion": "Does that literature already contain the inverse?",
+   "triedOrSearched": "Identified by a reviewer; not searched",
+   "estimatedCost": "hours",
+   "cheap": true,
+   "decision": "OPEN",
+   "reasonOpen": "Bounded search recorded as such",
+   "whyNotClosedNow": "Affects priority wording only; priority is not claimed"
+  }
+ ],
+ "extensionScout": {
+  "by": "internal AI-assisted review panel and editor (agent)",
+  "date": "2026-10-31",
+  "proposals": [
+   "selection results",
+   "dual observables and even eccentricity moments",
+   "power-law estimators with Fisher information",
+   "weak continuity",
+   "grid estimator demonstration",
+   "real-catalogue analysis"
+  ],
+  "actions": [
+   "done (Section 8)",
+   "done (Theorem 6.2, Corollary 7.1)",
+   "done (Section 7.2)",
+   "done (Proposition 9.2)",
+   "done as demonstration (Section 10.3)",
+   "declined; open task"
+  ]
+ }
+}
